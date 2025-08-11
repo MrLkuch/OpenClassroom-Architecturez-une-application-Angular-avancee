@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SocialMediaRoutingModule } from './social-media-routing-module';
 import { PostsService } from './services/posts.services';
+import { PostsResolver } from './resolvers/Posts.resolvers';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { PostsService } from './services/posts.services';
     SocialMediaRoutingModule
   ],
   providers: [
-    PostsService
+    PostsService,
+    PostsResolver
   ]
 })
 export class SocialMediaModule { }
